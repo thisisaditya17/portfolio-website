@@ -13,7 +13,7 @@
         <div>
             <ul class = "nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#exp">Experience</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>   
@@ -29,7 +29,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#exp" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
             </div> 
@@ -78,13 +78,15 @@
                         <img src="./assets/experience.png" 
                         alt="experience-icon" class="icon"/>
                         <h3>Experience</h3>
-                        <p>Developed a generalized RAG using open source and free resources</p>
+                        <p>Artimal:</p>
+                        <p>Tech Executive</p>
+                        <p>Orbital: Apollo 11</p>
                     </div>    
                     <div class = details-container>
                         <img src="./assets/Education icon.png" 
                         alt="education-icon" class="icon"/>
                         <h3>Education</h3>
-                        <p>Currently pursuing Computer Science from National University of Singapore</p>
+                        <p>Computer Science Undergrad from National University of Singapore</p>
                     </div> 
                 </div>
                 <div class = "text-container">
@@ -101,8 +103,210 @@
             </div>
         </div>
             <img src = "./assets/arrow.png" alt = "arrow icon" class = "icon arrow"
-            onclick= "location.href ='./experience'"/>
+            onclick= "location.href ='./#experience'"/>
     </section>
-    <script src="script.js"></script>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="experience-containers">
+            <div class="exp-details-container">
+              <h2 class="experience-sub-title">Work and Projects</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Artimal</h3>
+                    <p>Tech Executive</p>
+                    <p>2024-Present</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Publicity Head</h3>
+                    <p>NUS Electronic Music Lab</p>
+                    <p>2024-Present</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Orbital</h3>
+                    <p>Level: Apollo 11</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Programming Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MySQL</h3>
+                    <p>Beginner</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-details-container">
+          <div class="project-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/Kayo.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">KAYO</h2>
+              <p>Generalized RAG made with free open source resources</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/thisisaditya17/KAYO'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://drive.google.com/file/d/1gIq4JUAhbzTCYgFY0i5RYNq7hCxCga38/view?usp=drive_link'"
+                >
+                  Demo Video
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/KillJoy.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">KillJoy</h2>
+              <p>Task Manager made with JavaFX</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/thisisaditya17/ip'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://thisisaditya17.github.io/ip/'"
+                >
+                  User Guide
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contacts'"
+        />
+      </section>
+      <section id="contacts">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/Email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:joshi.adi1734@gmail.com">Email</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/LinkedIn icon.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/thisisaditya17">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+      </footer>
+      <script src="script.js"></script>
 </body>
 </html>
