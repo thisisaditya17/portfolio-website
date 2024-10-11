@@ -214,6 +214,10 @@ section {
     height: 2rem;
 }
 
+.socials:hover {
+    cursor: pointer;  
+}
+
 /* Buttons */
 
 .btn-container {
@@ -235,8 +239,7 @@ section {
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
-    cursor: pointer;
-    
+    cursor: hand;
 }
 
 .btn-color-1, .btn-color-2:hover {
