@@ -50,7 +50,7 @@ nav {
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 a {
@@ -540,4 +540,7 @@ article p {
   footer p {
     text-align: center;
   }
+
+/* Extra */
+
 
