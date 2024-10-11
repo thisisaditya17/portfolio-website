@@ -440,6 +440,7 @@ article p {
   
   #projects {
     position: relative;
+    height: 100vh;
 }
 
 .project-details-container {
@@ -462,12 +463,14 @@ article p {
     margin: 1rem; /* Add margin to create space between project boxes */
     flex: 0 1 calc(33% - 2rem); /* Adjust width of each box and allow for margins */
     max-width: 300px; /* Optional: Set a max width for each project box */
+    height: 85%; /* Ensure all project boxes are the same height */
+    
 }
 
 .project-img {
     border-radius: 2rem;
     width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
+    height: 400px; /* Maintain aspect ratio */
 }
 
 .project-title {
@@ -479,7 +482,7 @@ article p {
     color: black;
     border-color: rgb(163, 163, 163);
 }
-  
+
   /* CONTACT */
   
   #contacts {
