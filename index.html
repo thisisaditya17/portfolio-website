@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Aditya Joshi | Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/Adi profile pic.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo" onclick="location.href='./#desktop-nav'">Aditya Joshi</div>
+        <div class="logo">Aditya Joshi</div>
         <div>
-            <ul class = "nav-links">
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>   
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo" onclick="location.href='./#hamburger-nav'">Aditya Joshi</div>
+        <div class="logo">Aditya Joshi</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -31,282 +33,237 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
-            </div> 
+                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
     </nav>
-    <section id ="profile">
-        <div class = "section_pic-container">
-            <img src="./assets/Adi profile pic.png" alt="adi profile pic">
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Adi profile pic.png" alt="Aditya Joshi profile picture" />
         </div>
-        <div class = "section_text">
-            <p class = "section_text_p1">Hello, I am</p>
-            <h1 class = "title">Aditya Joshi</h1>
-            <p class = "section_text_p2">Computer Science Student</p>
-            <div class = "btn-container">
-                <button class = "btn btn-color-2" onclick="window.open('./assets/Resume New.pdf')">
-                See my Resume
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Aditya Joshi</h1>
+            <p class="section__text__p2">Computer Science Student at NUS</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/RESUME_2025.pdf')">
+                    Download Resume
                 </button>
-                <button class = "btn btn-color-1" onclick="location.href = './#contacts'">
-                    Contact Me 
+                <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+                    Contact Info
                 </button>
             </div>
-            <div class = "socials-container">
-                <img src="./assets/LinkedIn icon.png" 
-                alt="linkedin"
-                class="icon socials"
-                onclick="location.href = 'https://www.linkedin.com/in/thisisaditya17'">
-                <img src="./assets/GitHub icon.gif" 
-                alt="github"
-                class="icon socials"
-                onclick="location.href = 'https://www.github.com/thisisaditya17'">
+            <div id="socials-container">
+                <img src="./assets/LinkedIn icon.png" alt="LinkedIn" class="icon"
+                     onclick="location.href='https://www.linkedin.com/in/thisisaditya17'" />
+                <img src="./assets/GitHub icon.gif" alt="GitHub" class="icon"
+                     onclick="location.href='https://www.github.com/thisisaditya17'" />
             </div>
         </div>
     </section>
     <section id="about">
-        <p class = 'section_text_p1'> Get To Know More</p>
-        <h1 class = 'title'>About Me</h1>
-        <div class = 'section-container'>
-            <div class = "section_pic-container">
-                <img src="./assets/side profile.jpg" 
-                alt="about-profile-pic"
-                class="about-pic"/>
-            </div> 
-            <div class = "about-deatils-container">
-                <div class = "about-container">
-                    <div class = details-container>
-                        <img src="./assets/experience.png" 
-                        alt="experience-icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>Artimal: Tech Executive</p>
-                        <p>Orbital: Apollo 11</p>
-                    </div>    
-                    <div class = details-container>
-                        <img src="./assets/Education icon.png" 
-                        alt="education-icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>Computer Science Undergrad from National University of Singapore</p>
-                    </div> 
-                </div>
-                <div class = "text-container">
-                    <p>Hi, I am Aditya Joshi, a Computer Science student at National University of Singapore. 
-                        I am passionate about technology and love to explore new things. 
-                        I am a quick learner and always ready to take up new challenges. 
-                        I have a keen interest in software development and have worked on various projects. 
-                        I am always eager to learn new technologies and improve my skills. 
-                        I am a team player and have worked on various projects in a team. 
-                        I am always ready to help others and share my knowledge. 
-                        I am looking for opportunities where I can learn and grow as a software developer.
-                    </p>
-                </div>
-            </div>
-        </div>
-            <img src = "./assets/arrow.png" alt = "arrow icon" class = "icon arrow"
-            onclick= "location.href ='./#experience'"/>
-    </section>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-section-container">
+          <div class="about-pic-card">
+              <img src="./assets/side profile.jpg" alt="Profile picture" class="about-pic" />
+              <div class="pic-overlay">
+                  <p>Aditya Joshi</p>
+              </div>
+          </div>
+          <div class="about-content">
+              <div class="about-card experience-card">
+                  <div class="card-header">
+                      <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                      <h3>Experience</h3>
+                  </div>
+                  <p>Tech Executive at Artimal<br>Incoming R&D Intern at Laconic<br>Publicity Head at NUS EML</p>
+              </div>
+              <div class="about-card education-card">
+                  <div class="card-header">
+                      <img src="./assets/Education icon.png" alt="Education icon" class="icon" />
+                      <h3>Education</h3>
+                  </div>
+                  <p>B.Comp in Computer Science<br>National University of Singapore<br>GPA: 4.00</p>
+              </div>
+              <div class="about-card bio-card">
+                  <h3>A Bit About Me</h3>
+                  <p>
+                      I'm Aditya Joshi, a Computer Science undergrad at NUS with a passion for coding and creativity. I specialize in Python, Java, C/C++, and MySQL, with hands-on experience in software development and machine learning. From leading tech projects at Artimal to co-founding a book rental startup in high school, I thrive on innovation. Outside tech, I’m into music production, filmmaking, and community service—always eager to blend my skills into impactful projects!
+                  </p>
+              </div>
+          </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" /> 
+  </section>
+  
     <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="experience-containers">
-            <div class="exp-details-container">
-              <h2 class="experience-sub-title">Work and Projects</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Artimal</h3>
-                    <p>Tech Executive</p>
-                    <p>2024-Present</p>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-timeline">
+          <div class="timeline-container">
+              <!-- Work Experience -->
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h2 class="experience-title">Incoming R&D Software Developer Intern</h2>
+                      <p class="experience-subtitle">Laconic Technology Company Limited | May 2024 - Aug 2024</p>
+                      <p class="experience-desc">
+                          Will contribute to R&D through coding, debugging, and feature implementation under senior developer mentorship.
+                      </p>  
                   </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Publicity Head</h3>
-                    <p>NUS Electronic Music Lab</p>
-                    <p>2024-Present</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Orbital</h3>
-                    <p>Level: Apollo 11</p>
-                  </div>
-                </article>
               </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Programming Skills</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MySQL</h3>
-                    <p>Beginner</p>
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h2 class="experience-title">Tech Executive</h2>
+                      <p class="experience-subtitle">Artimal, Singapore | Oct 2024 - Jan 2025</p>
+                      <p class="experience-desc">
+                          Leading AI chatbot development for company mascots and managing MySQL databases and software projects.
+                      </p>  
                   </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Python</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
               </div>
-            </div>
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                      <h2 class="experience-title">Publicity Head</h2>
+                      <p class="experience-subtitle">NUS Electronic Music Lab | Aug 2024 - May 2025</p>
+                      <p class="experience-desc">
+                          Directed social media strategies and event promotions, boosting engagement for workshops and performances.
+                      </p>
+                  </div>
+              </div>
+              <!-- Technical Skills -->
+              <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content skills-container">
+                      <h2 class="experience-title">Technical Skills</h2>
+                      <div class="skills-tags">
+                          <span class="skill-tag">Python</span>
+                          <span class="skill-tag">Java</span>
+                          <span class="skill-tag">C/C++</span>
+                          <span class="skill-tag">HTML/CSS</span>
+                          <span class="skill-tag">Git</span>
+                          <span class="skill-tag">MySQL</span>
+                          <span class="skill-tag">MATLAB</span>
+                          <span class="skill-tag">Scikit-learn</span>
+                          <span class="skill-tag">Pandas</span>
+                          <span class="skill-tag">Adobe Suite</span>
+                          <span class="skill-tag">FL Studio</span>
+                          <span class="skill-tag">DaVinci Resolve</span>
+                      </div>
+                  </div>
+              </div>
           </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>   
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-timeline">
+        <div class="timeline-container">
+            <!-- Project 1: KAYO -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2 class="project-title">KAYO</h2>
+                    <div class="project-media">
+                        <img src="./assets/Kayo.jpg" alt="KAYO Project" class="project-img" />
+                    </div>
+                    <p class="project-summary"><em><b>Web platform improving AI document analysis accuracy (Apollo 11 level achievement)</b></em></p>
+                    <p class="project-desc">
+                        Developed an AI-driven web platform for enhanced document analysis, achieving high accuracy with Python and machine learning techniques.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/thisisaditya17/KAYO'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1gIq4JUAhbzTCYgFY0i5RYNq7hCxCga38/view'">
+                            Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2: CS2103T Task Manager -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2 class="project-title">CS2103T Task Manager</h2>
+                    <div class="project-media">
+                        <img src="./assets/KillJoy.png" alt="Task Manager" class="project-img" />
+                    </div>
+                    <p class="project-summary"><em><b>Java/JavaFX application for team project in Software Engineering module</b></em></p>
+                    <p class="project-desc">
+                        Built a task management tool with Java and JavaFX, featuring an intuitive UI for efficient task tracking in a team setting.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/thisisaditya17/ip'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3: Video Game Sales Predictor -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2 class="project-title">Video Game Sales Predictor</h2>
+                    <div class="project-media">
+                        <img src="./assets/video_game_sales_img.png" alt="ML Project" class="project-img" />
+                    </div>
+                    <p class="project-summary"><em><b>Linear Regression model with Python (Pandas, Scikit-learn)</b></em></p>
+                    <p class="project-desc">
+                        Created a predictive model using linear regression to forecast video game sales, leveraging Pandas and Scikit-learn for data analysis.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/thisisaditya17/video-game-sales-linear-regression'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-      </section>
-      <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="project-details-container">
-          <div class="project-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Kayo.jpg"
-                  alt="Project 1"
-                  class="project-img"
-                />
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contacts'" />
+</section>
+<section id="contacts">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="projects-timeline"> <!-- Reusing projects-timeline class for consistency -->
+      <div class="timeline-container">
+          <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                  <h2 class="experience-title">Reach Out</h2> <!-- Using experience-title class for consistency -->
+                  <div class="contact-info-upper-container">
+                      <div class="contact-info-container">
+                          <img src="./assets/Email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                          <p class="experience-desc"><a href="mailto:joshi.adi1734@gmail.com">joshi.adi1734@gmail.com</a></p>
+                      </div>
+                      <div class="contact-info-container">
+                          <img src="./assets/LinkedIn icon.png" alt="LinkedIn icon" class="icon contact-icon" />
+                          <p class="experience-desc"><a href="https://www.linkedin.com/in/thisisaditya17">LinkedIn</a></p>
+                      </div>
+                  </div>
               </div>
-              <h2 class="experience-sub-title project-title">KAYO</h2>
-              <p>Generalized RAG made with free open source resources</p>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/thisisaditya17/KAYO'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://drive.google.com/file/d/1gIq4JUAhbzTCYgFY0i5RYNq7hCxCga38/view?usp=drive_link'"
-                >
-                  Demo Video
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/KillJoy.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">KillJoy</h2>
-              <p>Task Manager made with JavaFX</p>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/thisisaditya17/ip'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://thisisaditya17.github.io/ip/'"
-                >
-                  User Guide
-                </button>
-              </div>
-            </div>
           </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contacts'"
-        />
-      </section>
-      <section id="contacts">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/Email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:joshi.adi1734@gmail.com">Email</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/LinkedIn icon.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/thisisaditya17">LinkedIn</a></p>
-          </div>
-        </div>
-      </section>
-      <footer>
+      </div>
+  </div>
+</section>
+    <footer>
         <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#desktop-nav">Profile</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contacts">Contacts</a></li>
-            </ul>
-          </div>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        
-      </footer>
-      <script src="script.js"></script>
+        <p>Copyright © 2024 Aditya Joshi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
